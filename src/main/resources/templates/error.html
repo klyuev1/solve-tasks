@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Error</title>
+        <!--    <link rel="stylesheet" href="/styles.css">-->
+    </head>
+    <body>
+        <p>Имеются ошибки!</p>
+        <p>Пример 1. Правильный ответ:
+            <span th:text="${right1}"></span>
+            , ваш ответ:
+            <span th:text="${user1}"></span>
+        </p>
+
+        <p>Пример 2. Правильный ответ:
+            <span th:text="${right2}"></span>
+            , ваш ответ:
+            <span th:text="${user2}"></span>
+        </p>
+    </body>
+</html>

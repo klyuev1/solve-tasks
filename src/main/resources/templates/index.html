@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Primers</title>
+<!--    <link rel="stylesheet" href="/styles.css">-->
+</head>
+<body>
+    <p> Привет, мир! <p/>
+    <p th:text="${key1}"></p>
+    <p th:text="${key2}"></p>
+    <p th:text="${key3}"></p>
+
+    <form th:action="@{/check}" method="get">
+        <p>2 + 2 =
+            <input type="number" name="ans" id="ans" />
+        </p>
+        <p>2 + 8 =
+            <input type="number" name="ans2" id="ans2" />
+        </p>
+        <br/>
+        <input type="submit" value="Проверить" />
+    </form>
+</body>
+</html>
