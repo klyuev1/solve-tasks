@@ -1,27 +1,60 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
-    <title>Primers</title>
-<!--    <link rel="stylesheet" href="/styles.css">-->
+    <title>Solve Tasks</title>
+    <link rel="stylesheet" href="/index.css">
 </head>
-<body>
-    <p> Привет, мир! <p/>
+<body class="page">
+
+    <header class="header">
+        <h1 class="header__title">Решай задачи</h1>
+        <nav class="header__nav">
+            <a href="#" class="header__nav-link">Главная</a>
+            <a href="#" class="header__nav-link">О проекте</a>
+        </nav>
+    </header>
+
+    <main class="main">
+        <h2 class="main__task-title">Темы</h2>
+
+        <div class="task task__cursor" onclick="location.href='/simple/'">
+            <h3 class="task__condition">Уравнения с дискриминантом</h3>
+        </div>
+
+        <div class="task task__cursor" onclick="location.href='/task2'">
+            <h3 class="task__condition">Уравнения с теоремой Виета</h3>
+        </div>
+
+        <div class="task task__cursor" onclick="location.href='/task3'">
+            <h3 class="task__condition">Уравнения с обратной теоремой Виета</h3>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__links">
+            <a href="https://github.com/ваш-гитхаб" class="footer__link">Мой GitHub</a>
+        </div>
+        <p class="footer__copyright">&copy; 2023 Ваше Имя. Все права защищены.</p>
+    </footer>
+
+    <!-- <p> Привет, мир! <p/>
     <p th:text="${key1}"></p>
     <p th:text="${key2}"></p>
-    <p th:text="${key3}"></p>
+    <p th:text="${key3}"></p> -->
 
-    <form th:action="@{/check}" method="get">
-        <p>2 + 2 =
-            <input type="number" name="ans" id="ans" />
-        </p>
-        <p>2 + 8 =
-            <input type="number" name="ans2" id="ans2" />
-        </p>
-        <br/>
-        <input type="submit" value="Проверить" />
-    </form>
+<!--    <form th:action="@{/check}" method="get">-->
+<!--        <p>2 + 2 =-->
+<!--            <input type="number" name="ans" id="ans" />-->
+<!--        </p>-->
+<!--        <p>2 + 8 =-->
+<!--            <input type="number" name="ans2" id="ans2" />-->
+<!--        </p>-->
+<!--        <br/>-->
+<!--        <input type="submit" value="Проверить" />-->
+<!--    </form>-->
 </body>
 </html>
